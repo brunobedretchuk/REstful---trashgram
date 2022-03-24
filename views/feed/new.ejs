@@ -1,0 +1,34 @@
+<%- include('partials/head') %> 
+<%- include('partials/navbar') %> 
+<div class="container">
+    <div class="row mb-5">
+        <div class="col text-center"><h1>Make a new Post no one cares!</h1></div>
+    </div>
+    
+    <div class="col-6">
+      <form action="/feed" method="post">
+         <div class="d-flex justify-content-between m-2">   
+        <label for="username">Enter your username:</label>  
+        <input type="text" id="username" name="username" placeholder="username"></div>
+        <div class="d-flex justify-content-between m-2">
+        <label for="postTitle">Enter your title:</label>  
+        <input type="text" id="postTitle" name="postTitle" placeholder="title"></div>
+        <div class="d-flex justify-content-between m-2">
+        <label for="postURL">Enter image`s url</label>  
+        <textarea placeholder="Image's URL here" name="postURL" id="postURL" cols="30" rows="10"></textarea></div>
+    <div class="d-flex justify-content-end m-2">
+        <button class="btn btn-light">Post</button></div>  
+    </form>
+    
+    </div>
+    
+        
+    
+    
+    
+    
+    
+    </div>
+
+</body>
+</html>

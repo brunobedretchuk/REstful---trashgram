@@ -1,0 +1,30 @@
+<%- include('partials/head') %> 
+<%- include('partials/navbar') %> 
+    <div class="container ">
+<div class="row mb-5">
+    <div class="col text-center"><h1>Edit your post's title</h1></div>
+</div>
+<div class="row d-flex justify-content-center">
+<div class="col-6 d-flex flex-column justify-content-center mb-3 border 
+    border-secondary rounded"> 
+        <div class="text-center">
+           <form action="/feed/<%= post.id %>?_method=PATCH" method="POST">
+            <textarea name="postTitle" id="" cols="30" rows="5">
+                <%= post.postTitle %> 
+            </textarea>
+            <button>Edit</button>
+           </form>
+        </div>
+        
+    
+    </div>
+</div>
+    
+
+
+
+
+
+</div>
+</body>
+</html>
